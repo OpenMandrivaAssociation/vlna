@@ -35,5 +35,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
+%doc ChangeLog  README README.en vlna.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.lzma
