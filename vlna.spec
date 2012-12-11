@@ -38,3 +38,20 @@ rm -rf %{buildroot}
 %doc ChangeLog  README README.en vlna.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
+
+
+%changelog
+* Wed Dec 08 2010 Funda Wang <fwang@mandriva.org> 1.4-2mdv2011.0
++ Revision: 615970
+- update file list
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - the mass rebuild of 2010.1 packages
+
+* Fri Jan 08 2010 Peťoš Šafařík <petos@mandriva.org> 1.4-1mdv2010.1
++ Revision: 487815
+- Documentation added: README in Czech (autors native) and English and manual (vlna.txt)
+- Description in SPEC updated
+- import vlna
+
+
