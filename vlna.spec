@@ -3,15 +3,13 @@
 %define release 3
 
 Summary: Add the \nobreak by Czech typesetting conventions
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: ftp://math.feld.cvut.cz/pub/olsak/vlna/%{name}-%{version}.tar.gz
+Name: vlna
+Version: 1.5
+Release: 1
+Source0: http://petr.olsak.net/ftp/olsak/vlna/vlna-%{version}.tar.gz
 License: GPLv2
 Group: Text tools
 Url: http://petr.olsak.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 
 %description
 Program vlna adds ties (Czech vlna or vlnka) after nonsyllabic prepositions
@@ -23,15 +21,11 @@ at undesirable spaces.
 %setup -q
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-rm -rf %{buildroot}
-%makeinstall
-
-%clean
-rm -rf %{buildroot}
+%make_install
 
 %files
 %defattr(-,root,root)
