@@ -9,7 +9,7 @@ Release: 1
 Source0: http://petr.olsak.net/ftp/olsak/vlna/vlna-%{version}.tar.gz
 License: GPLv2
 Group: Text tools
-Url: http://petr.olsak.net/
+Url: https://petr.olsak.net/
 
 %description
 Program vlna adds ties (Czech vlna or vlnka) after nonsyllabic prepositions
